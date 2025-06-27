@@ -1,0 +1,322 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body,
+input,
+button,
+textarea,
+select {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+}
+
+.gap-15 {
+  gap: 15px;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard-layout {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+}
+
+.dashboard-content {
+  grid-column: 2;
+}
+
+.sidebar {
+  position: fixed;
+  width: 260px;
+  height: 100vh;
+  background-color: #1e1e1e;
+  z-index: 1000;
+}
+
+.logo {
+  font-weight: 600;
+  font-size: 30px;
+  color: #fff;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.menu li {
+  list-style: none;
+}
+
+.menu li a,
+.menu li p {
+  padding: 8px 20px;
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  cursor: pointer;
+}
+
+.menu li a:hover,
+p:hover {
+  background-color: #fff;
+  color: #1e1e1e;
+}
+
+.navbar {
+  background-color: #f0f0f0;
+  padding: 10px 20px;
+  position: fixed;
+}
+
+.w-space-available {
+  width: -webkit-fill-available;
+}
+
+.justify-content-right {
+  justify-content: flex-end;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.user-avatar {
+  background-color: rgb(170, 42, 170);
+  color: white;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+}
+.user-avatar img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.p-20 {
+  padding: 20px;
+}
+
+.mr-15 {
+  margin-left: 15px;
+}
+
+.content {
+  padding: 15px 40px;
+  margin-top: 55px;
+}
+
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  margin-top: 20px;
+}
+
+.table {
+  width: max-content;
+}
+.table thead tr {
+  text-align: left;
+}
+
+.table thead tr th,
+td {
+  padding: 10px 20px;
+  border-top: 1px solid #ddd;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #02b689;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #029f7a;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="password"],
+select,
+textarea {
+  padding: 8px 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 100%;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="password"],
+textarea,
+select:focus {
+  outline: none;
+  border: 1px solid #7cc4ff;
+  box-shadow: 0 0 5px #7cc4ff;
+}
+
+input[type="submit"] {
+  background-color: #02b689;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.form-control {
+  margin-bottom: 15px;
+}
+
+.is-invalid {
+  border: 1px solid red !important;
+}
+
+.error-message {
+  color: red;
+  font-size: 12px;
+}
+
+.form-control label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+.add-product-form {
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.contact-form {
+  width: 600px;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 50px;
+}
+
+.bg-dark {
+  background-color: #1e1e1e;
+  color: #fff;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.login-container {
+  width: 400px;
+  margin: 0 auto;
+  margin-top: 100px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.user-card {
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.user-card h2,
+p {
+  color: #333;
+  padding: 0;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+   .pagination-container {
+   
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 25px;
+  margin-left:25% ;
+  user-select: none;
+}
+
+.pagination-container button,
+.pagination-container span {
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  background-color: white;
+  color: #333;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.pagination-container button:hover:not(:disabled) {
+  background-color: #f0f0f0;
+  border-color: #999;
+
+}
+
+.pagination-container button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+  background-color: #fafafa;
+  border-color: #ddd;
+  color: #aaa;
+}
+
+.pagination-container button.active,
+.pagination-container button.active:hover {
+  background-color: #2563eb; /* blue-600 */
+  color: white;
+  border-color: #2563eb;
+  font-weight: 600;
+}
+
+.pagination-container span {
+  padding: 6px 8px;
+  cursor: default;
+  user-select: none;
+  color: #666;
+}
+   .wrapperUser{
+    display: flex;
+    flex-direction: row;
+ 
+   }
+   .wrapperUser button{
+    margin-left: 600%;
+   
+   }
